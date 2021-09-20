@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameRPS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <h1 class="title">Добро пожаловать игру!)</h1>
+
+        <div class="scores">
+            <span class="user-score">Ты: 0</span>
+            <span class="comp-score">Не ты: 0</span>
+        </div>
+
+        <div class="game-play">
+            
+            <div class="user-play">
+                <img src="./rock.svg" id="user-play">
+            </div>
+
+            <p>VS</p>
+
+            <div class="comp-play">
+                <img src="./rock.svg" id="comp-play">
+            </div>
+
+        </div>
+
+        <div class="result">Результат!</div>
+
+        <div class="moves">
+
+            <img src="./rock-icon.svg" class="rock moves-item">
+            <img src="./paper-icon.svg" class="paper moves-item">
+            <img src="./scissor-icon.svg" class="scissor moves-item">
+
+        </div>
+
+        <div class="tap">Жми!</div>
+    </div>
+
+    <audio  id="win">
+        <source src="win.mp3" type="audio/mp3">
+    </audio>
+    <audio  id="lose">
+        <source src="lose.mp3" type="audio/mp3">
+    </audio>
+    <audio  id="click">
+        <source src="click.wav" type="audio/wav">
+    </audio>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
